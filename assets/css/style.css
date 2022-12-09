@@ -1,0 +1,70 @@
+body{
+    padding: 0;
+    margin: 0;    
+    width:100vw;
+    height: 100vh;}
+.panel{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../photos/wp7353169.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.question-box{
+    border-radius: 25px;
+    margin: 10px;
+    padding: 5px;
+    width: 80vw;
+    height: 10vh;
+    background-color:slategray;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;}
+.result{
+    margin: 10px;
+    padding: 5px;
+    width:80vw;
+    height: 10vh;
+    text-align: center;
+    font-size: 50px;}
+.option-box{
+    display: flex;
+    justify-content: space-around; 
+    margin: 10px;
+    padding: 5px;
+    width: 80vw;
+    height: 20vh;
+    background-color: transparent;   
+        }
+.option{    
+    padding: 10px;
+    width: 15vw;
+    height: 10vh;
+    font-size: larger;
+    background-color: teal;
+    border-radius: 10px;}
+.option:hover{
+    background-color: lightskyblue;}
+.navigation{
+    width: 80vw;
+    height: 10vh;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color:#c7dddf;}
+  
+.next{
+    width:30vw;
+    height: 8vh;
+    padding: 5px;
+    font-size: larger;
+    color: white;
+    background-color: #BF3325;
+    border-radius: 20px;}
+.next:hover{
+    background-color: lightcoral;
+}
