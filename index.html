@@ -1,35 +1,28 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Quiz Application</title>
-        <meta name="description" content="a basic quiz ">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/assets/css/style.css">
-    </head>
-    <body>
-        <div class="panel">
-            <div class="result">
-      
-            </div>
-            <div class="question-box" id="question">
-                Question?
-            </div>
-            <div class="option-box">
-                <button class="option" onclick="" id="op1" >option1</button>
-          
-                <button class="option" id="op2" >option2</button>
-          
-                <button class="option" id="op3">option3</button>
-          
-                <button class="option" id="op4">option4</button>
-            </div>
-            <div class="navi">
-                <button class="next">Next</button>
-            </div>
-        </div>
-        <script src="/assets/JS/script.js"></script>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  <script defer src="/assets/JS/script.js"></script>
+  <title>Plant Quiz</title>
+</head>
+<body>
+  <div class="container">
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+  </div>
+</body>
 </html>
