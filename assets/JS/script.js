@@ -11,7 +11,7 @@ nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
-
+//randomized the questions and starts the game
 function startGame() {
   startButton.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -19,12 +19,12 @@ function startGame() {
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
 }
-
+//sets up the next question
 function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
 }
-
+//adds the text to the buttons and the question box
 function showQuestion(question) {
   questionElement.innerText = question.question
   question.answers.forEach(answer => {
@@ -38,15 +38,14 @@ function showQuestion(question) {
     answerButtonsElement.appendChild(button)
   })
 }
-
+//resets and sets up next question
 function resetState() {
-  clearStatusClass(document.body)
   nextButton.classList.add('hide')
   while (answerButtonsElement.firstChild) {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild)
   }
 }
-
+//the selection of the awnsers
 function selectAnswer(e) {
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
@@ -60,7 +59,7 @@ function selectAnswer(e) {
     startButton.classList.remove('hide')
   }
 }
-
+//sets the class after the question is selected
 function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
@@ -69,12 +68,12 @@ function setStatusClass(element, correct) {
     element.classList.add('wrong')
   }
 }
-
+//when the nw question comes on screen resets class
 function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
 }
-
+//here are the questions that get put out
 const questions = [
   {
     question: 'What is Wild HorseTail Good For?',
