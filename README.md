@@ -5,7 +5,7 @@ This is a quiz using javascipt to randomize and tell you if you got a question r
 No instalation required just run from the link
 
 ![screenshot of website](./assets/photos/screen.png)
-https://phoenix-ceri.github.io/Browser-Quiz/
+https://fifisplantquiz.netlify.app
 ## Usage
 Start the game and then click buttons to awnser questions
 ## Credits
