@@ -1,5 +1,6 @@
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
+const endButton = document.getElementById('end-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
@@ -55,8 +56,9 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
   } else {
-    startButton.innerText = 'Restart'
-    startButton.classList.remove('hide')
+    endButton.innerText = 'End'
+    endButton.classList.remove('hide')
+    endButton.addEventListener('click', endgame)
   }
 }
 //sets the class after the question is selected
@@ -112,3 +114,6 @@ const questions = [
     ]
   }
 ]
+function endgame(){
+  window.location.href = "/scores.html"
+}
