@@ -115,5 +115,5 @@ const questions = [
   }
 ]
 function endgame(){
-  window.location.href = "/scores.html"
+  window.location.href = "/docs/scores.html"
 }
