@@ -11,6 +11,7 @@ Start the game and then click buttons to awnser questions
 ## Credits
 
 Google for the photo
+
 Jim McDonald for the information on these plants years ago
 
 ## License
