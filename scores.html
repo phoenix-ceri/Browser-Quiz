@@ -4,20 +4,25 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Fifi's Plant Quiz Scores</title>
+        <title>scores</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
-    <body>
-        <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname">
-            <input type="submit">
-          </form>
-        
+    <body style="flex-direction : column">
+        <div id="scoreboard-section" class="container">
+            <table id='scoreboard-table' style="border : solid 1px black ;">
+            </table>
+        </div>
+        <div id="enter-name-section" class="container">
+            <label for="enter-name-input">Your name</label><br>
+            <input type="text" id="enter-name-input"><br>
+            <button id="enter-name-btn" class="btn">Submit</button>
+        </div>
+        <div id="clear-scoreboard-section" class="container">
+            <button id="clear-scoreboard-btn" class="btn">Clear Scoreboard</button>
+            <button id="again-btn" class="btn">Play Again?</button>
+        </div>
         <script src="./assets/JS/end.js" async defer></script>
     </body>
 </html>

@@ -14,6 +14,7 @@ Google for the photo
 
 Jim McDonald for the information on these plants years ago
 
+Laruen Mastin (My Mom) for the guidence and help finding the right things to use
 ## License
 
 used the MIT licence
